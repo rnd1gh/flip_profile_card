@@ -1,3 +1,5 @@
+import 'package:flip_3d_profile_card/config/constants.dart';
+import 'package:flip_3d_profile_card/widgets/flip_profile_card.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -24,6 +26,11 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const Scaffold(
+      backgroundColor: backgroundColor,
+      body: Center(
+        child: FlipProfileCard(),
+      ),
+    );
   }
 }
